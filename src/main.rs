@@ -10,7 +10,7 @@ fn main() -> wry::Result<()> {
     let window = WindowBuilder::new().build(&event_loop).unwrap();
 
     let builder = WebViewBuilder::new()
-        .with_url("https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe")
+        .with_url("https://www.w3schools.com/html/html_iframe.asp")
         .with_navigation_handler(|url| {
             println!("Navigation handler to {}", url);
             true
